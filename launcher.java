@@ -11,7 +11,7 @@ import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.canvas.*;
- 
+
 public class Launcher extends Application 
 {
     public static void main(String[] args) 
@@ -31,9 +31,9 @@ public class Launcher extends Application
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
         gc.setLineWidth(2);
-        draw(gc);
-
         stage.show();
+
+        ForkJoinPool.commonPool().submit(() -> draw(gc));
     }
 }
 
