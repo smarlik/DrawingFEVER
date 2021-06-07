@@ -15,7 +15,8 @@ square(GraphicsContext gc,int x, int y) {
     gc.strokeLine(x,y+35,x+35,y+35);
 	gc.strokeLine(x+35,y,x+35,y+35);
 }
-/open launcher.java
+
+//open launcher.java
 
 
 

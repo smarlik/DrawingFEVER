@@ -7,6 +7,7 @@
  * - /open this launcher at the end of your script
  *
  */
+//dependency org.openjfx:javafx-controls:11
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
