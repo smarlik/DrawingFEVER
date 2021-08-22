@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.glutils.*;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.*;
 import com.badlogic.gdx.scenes.scene2d.*;
 import com.badlogic.gdx.utils.viewport.*;
+import com.badlogic.gdx.utils.*;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
@@ -25,7 +26,7 @@ public class Launcher extends ApplicationAdapter {
     public void render () {
         // Using stage for proper conversion of coordinates to the
         // window coordinates (not screen)
-        var stage = new Stage(new FitViewport(100, 100));
+        var stage = new Stage(new ScreenViewport());
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         Gdx.gl.glClearColor(.25f, .25f, .25f, 1);
         draw(shapeRenderer);
