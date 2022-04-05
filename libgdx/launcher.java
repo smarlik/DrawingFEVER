@@ -1,3 +1,5 @@
+// The launcher helps confingure and run libgdx and it will also call draw for every new frame.
+
 //dependency com.badlogicgames.gdx:gdx-platform:jar:natives-desktop:1.9.14
 //dependency com.badlogicgames.gdx:gdx:1.9.14
 //dependency com.badlogicgames.gdx:gdx-backend-lwjgl:1.9.14
