@@ -16,12 +16,15 @@ import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
+void initialize() {}
+
 public class Launcher extends ApplicationAdapter {
     ShapeRenderer shapeRenderer;
 
     @Override
     public void create () {
         shapeRenderer = new ShapeRenderer();
+        initialize();
     }
 
     @Override
@@ -40,8 +43,9 @@ public class Launcher extends ApplicationAdapter {
     }
 }
 
-LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-new LwjglApplication(new Launcher(), config);
-
-printf("Press Enter to exit...\n");
-cli.waitPressEnter();
+void launch() {
+    LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+    new LwjglApplication(new Launcher(), config);
+    printf("Press Enter to exit...\n");
+    cli.waitPressEnter();
+}

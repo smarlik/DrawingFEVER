@@ -1,3 +1,5 @@
+//open launcher.java
+
 void draw(ShapeRenderer shapeRenderer) {
     shapeRenderer.begin(ShapeType.Filled);
     shapeRenderer.setColor(0, 1, 0, 1);
@@ -5,4 +7,4 @@ void draw(ShapeRenderer shapeRenderer) {
     shapeRenderer.end();
 }
 
-//open launcher.java
+launch();
