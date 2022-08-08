@@ -1,8 +1,8 @@
 // The launcher helps confingure and run libgdx and it will also call draw for every new frame.
 
-//dependency com.badlogicgames.gdx:gdx-platform:jar:natives-desktop:1.9.14
-//dependency com.badlogicgames.gdx:gdx:1.9.14
-//dependency com.badlogicgames.gdx:gdx-backend-lwjgl:1.9.14
+//dependency com.badlogicgames.gdx:gdx-platform:jar:natives-desktop:1.11.0
+//dependency com.badlogicgames.gdx:gdx:1.11.0
+//dependency com.badlogicgames.gdx:gdx-backend-lwjgl3:1.11.0
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.*;
@@ -13,8 +13,8 @@ import com.badlogic.gdx.scenes.scene2d.*;
 import com.badlogic.gdx.utils.viewport.*;
 import com.badlogic.gdx.utils.*;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 void initialize() {}
 
@@ -44,8 +44,8 @@ public class Launcher extends ApplicationAdapter {
 }
 
 void launch() {
-    LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-    new LwjglApplication(new Launcher(), config);
+    var config = new Lwjgl3ApplicationConfiguration();
+    new Lwjgl3Application(new Launcher(), config);
     printf("Press Enter to exit...\n");
     cli.waitPressEnter();
 }
