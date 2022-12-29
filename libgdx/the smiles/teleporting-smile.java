@@ -1,4 +1,5 @@
 // This program draws a smile. I got the idea for this program from the new edition of beanz!S
+//open ../launcher.java
 
 void draw(ShapeRenderer shapeRenderer) {
 
@@ -31,4 +32,16 @@ void drawsmile(ShapeRenderer shapeRenderer ,int r, int x, int y) {
 
 }
 
-//open launcher.java
+launch();
+
+		if(jiji.isFat=false) {
+			SpriteBatch batch2 = new SpriteBatch();
+			batch2.begin();
+			batch2.draw(skinny,100,10);
+			batch2.end();
+	}else{
+		SpriteBatch batch = new SpriteBatch();
+		batch.begin();
+		batch.draw(catxt,10,10);
+		batch.end();
+	}
